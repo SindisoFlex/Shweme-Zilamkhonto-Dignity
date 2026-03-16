@@ -124,7 +124,7 @@ export default function Home() {
               </div>
               <div className="pt-8">
                 <p className="text-primary font-medium tracking-wide uppercase text-sm border-t border-white/20 pt-4 inline-block">
-                  Trusted Funeral Services For Our Community.
+                  Trusted Funeral Services in Zwide, Port Elizabeth.
                 </p>
               </div>
             </div>

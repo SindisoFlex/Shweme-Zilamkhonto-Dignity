@@ -38,7 +38,7 @@ export default function About() {
                     Built on a foundation of hard work, deep community roots, and an unrelenting commitment to excellence, Shweme Zilamkhonto Funerals was born. We understand that saying goodbye is one of life's most profound moments, and our mission has always been to ensure that every family—regardless of their circumstances—receives professional, respectful, and compassionate care.
                   </p>
                   <p className="text-muted-foreground text-lg leading-relaxed">
-                    Today, that vision continues to guide us. Through decades of service, we have earned the trust of countless families across the Eastern Cape by remaining true to our core belief: that every life deserves to be honored with the utmost dignity.
+                    Today, that vision continues to guide us. Shweme Zilamkhonto Funerals proudly serves families in Zwide, Port Elizabeth, Hankey, Humansdorp, and surrounding communities across the Eastern Cape. Through decades of service, we have earned the trust of countless families by remaining true to our core belief: that every life deserves to be honored with the utmost dignity.
                   </p>
                 </div>
                 <div className="pt-8">

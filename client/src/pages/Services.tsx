@@ -56,8 +56,8 @@ export default function Services() {
           <div className="absolute inset-0 bg-gradient-to-r from-background to-transparent opacity-90"></div>
           <div className="container relative z-10 px-4 sm:px-6 lg:px-8">
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">Our Services</h1>
-            <p className="text-xl text-muted-foreground max-w-2xl">
-              Comprehensive and dignified funeral arrangements tailored to honor your loved one.
+            <p className="text-xl text-muted-foreground max-w-3xl">
+              Comprehensive and dignified funeral arrangements tailored to honor your loved one. As a trusted funeral parlour in Port Elizabeth, we proudly provide funeral services in Gqeberha, Hankey, and Humansdorp.
             </p>
           </div>
         </section>

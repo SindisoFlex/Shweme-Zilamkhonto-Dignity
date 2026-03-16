@@ -93,15 +93,22 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div className="flex flex-col">
-                  <span className="text-sm font-medium text-foreground">Zwide Head Office</span>
-                  <span className="text-muted-foreground text-sm">123 Main Road, Zwide, Gqeberha</span>
+                  <span className="text-sm font-medium text-foreground">Zwide Branch</span>
+                  <span className="text-muted-foreground text-sm">Port Elizabeth, Eastern Cape</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div className="flex flex-col">
                   <span className="text-sm font-medium text-foreground">Hankey Branch</span>
-                  <span className="text-muted-foreground text-sm">45 Voortrekker Street, Hankey</span>
+                  <span className="text-muted-foreground text-sm">Eastern Cape</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <div className="flex flex-col">
+                  <span className="text-sm font-medium text-foreground">Humansdorp Branch</span>
+                  <span className="text-muted-foreground text-sm">Eastern Cape</span>
                 </div>
               </li>
             </ul>
