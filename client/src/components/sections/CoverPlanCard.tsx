@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { Link } from "wouter";
 
 interface CoverPlanCardProps {
   title: string;
@@ -48,8 +49,8 @@ export function CoverPlanCard({ title, price, description, features, popular }: 
       </CardContent>
       
       <CardFooter>
-        <Button className={`w-full ${popular ? "bg-primary text-primary-foreground hover:bg-primary/90" : "bg-secondary text-secondary-foreground hover:bg-secondary/90"}`}>
-          Get a Quote
+        <Button className={`w-full ${popular ? "bg-primary text-primary-foreground hover:bg-primary/90" : "bg-secondary text-secondary-foreground hover:bg-secondary/90"}`} asChild>
+          <Link href="/funeral-cover">View Full Details</Link>
         </Button>
       </CardFooter>
     </Card>

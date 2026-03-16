@@ -6,39 +6,39 @@ import { CoverPlanCard } from "@/components/sections/CoverPlanCard";
 export default function FuneralCover() {
   const coverPlans = [
     {
-      title: "Individual Plan",
+      title: "R10,000 Cover",
       price: "120",
-      description: "Essential cover for a single member with dignified funeral benefits.",
+      description: "Essential cover ensuring a dignified farewell with a minimal waiting period.",
       features: [
-        "Up to R20,000 cover",
-        "No medicals required",
+        "R10,000 Funeral Cover",
         "Includes standard casket",
-        "Local transport",
-        "Grocery benefit"
+        "6-month waiting period",
+        "No medicals required",
+        "Local transport included"
       ]
     },
     {
-      title: "Family Plan",
-      price: "250",
-      description: "Comprehensive cover for the main member, spouse, and up to 5 children.",
+      title: "R15,000 Cover",
+      price: "180",
+      description: "Comprehensive cover providing additional support and premium features.",
       popular: true,
       features: [
-        "Up to R30,000 cover",
-        "No medicals required",
+        "R15,000 Funeral Cover",
         "Includes premium casket",
+        "6-month waiting period",
+        "No medicals required",
         "Family car included",
-        "Airtime & Grocery benefit",
-        "Repatriation within SA"
+        "Airtime & Grocery benefit"
       ]
     },
     {
-      title: "Extended Family Plan",
-      price: "450",
-      description: "Extensive cover including parents and extended family members.",
+      title: "R20,000 Cover",
+      price: "250",
+      description: "Extensive cover offering maximum financial peace of mind.",
       features: [
-        "Up to R40,000 cover",
-        "Cover for up to 14 members",
+        "R20,000 Funeral Cover",
         "Executive casket options",
+        "6-month waiting period",
         "Full funeral service provision",
         "Catering benefit included",
         "Tombstone discount"
