@@ -30,12 +30,17 @@ export default function About() {
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
                   Our Story
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  Founded with a vision to provide dignified, respectful, and compassionate funeral services, Shweme Zilamkhonto Funerals has grown to become a trusted name in the Eastern Cape communities.
-                </p>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  Led by Demo Director, our team understands that saying goodbye to a loved one is one of life's most difficult moments. We are dedicated to easing this burden by handling every detail with the utmost professionalism and cultural sensitivity.
-                </p>
+                <div className="space-y-4">
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    Growing up in the heart of the township, our founder, Demo Director, witnessed firsthand the deep emotional and financial strain families face when losing a loved one. From a young age, they envisioned building a service that would not only provide a dignified farewell but also stand as a pillar of unwavering support for the community.
+                  </p>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    Built on a foundation of hard work, deep community roots, and an unrelenting commitment to excellence, Shweme Zilamkhonto Funerals was born. We understand that saying goodbye is one of life's most profound moments, and our mission has always been to ensure that every family—regardless of their circumstances—receives professional, respectful, and compassionate care.
+                  </p>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    Today, that vision continues to guide us. Through decades of service, we have earned the trust of countless families across the Eastern Cape by remaining true to our core belief: that every life deserves to be honored with the utmost dignity.
+                  </p>
+                </div>
                 <div className="pt-8">
                   <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Our Values</h3>
                   <ul className="space-y-4">
