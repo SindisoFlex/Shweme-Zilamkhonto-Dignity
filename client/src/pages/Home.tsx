@@ -123,9 +123,16 @@ export default function Home() {
                 </Button>
               </div>
               <div className="pt-10">
-                <p className="text-primary font-medium tracking-wide uppercase text-sm border-t border-white/20 pt-6 inline-block w-full md:w-auto text-center md:text-left">
-                  Trusted Funeral Services in Zwide, Port Elizabeth.
-                </p>
+                <div className="border-t border-white/20 pt-6 flex flex-wrap items-center justify-center md:justify-start gap-2 md:gap-3 text-xs md:text-sm uppercase tracking-widest font-medium">
+                  <span className="text-primary">Serving</span>
+                  <span className="text-white/90">Zwide</span>
+                  <span className="text-primary/50">•</span>
+                  <span className="text-white/90">Port Elizabeth</span>
+                  <span className="text-primary/50">•</span>
+                  <span className="text-white/90">Hankey</span>
+                  <span className="text-primary/50">•</span>
+                  <span className="text-white/90">Humansdorp</span>
+                </div>
               </div>
             </div>
           </div>
