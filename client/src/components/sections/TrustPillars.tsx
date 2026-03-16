@@ -25,14 +25,14 @@ export function TrustPillars() {
   ];
 
   return (
-    <section className="py-24 bg-card border-y border-white/5">
+    <section className="py-20 bg-card border-y border-white/5">
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">Why Families Trust Us</h2>
           <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {pillars.map((pillar, index) => (
             <div 
               key={index} 

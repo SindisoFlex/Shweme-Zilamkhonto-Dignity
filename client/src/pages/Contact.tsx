@@ -22,7 +22,7 @@ export default function Contact() {
 
         <section className="py-20 bg-background">
           <div className="container px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               
               {/* Contact Information */}
               <div className="space-y-10 order-2 lg:order-1">

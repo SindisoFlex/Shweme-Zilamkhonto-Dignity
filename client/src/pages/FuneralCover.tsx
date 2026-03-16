@@ -63,7 +63,7 @@ export default function FuneralCover() {
 
         <section className="py-20 bg-background">
           <div className="container px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto items-center">
               {coverPlans.map((plan, index) => (
                 <div key={index} className={plan.popular ? "md:-mt-8 md:mb-8" : ""}>
                   <CoverPlanCard {...plan} />

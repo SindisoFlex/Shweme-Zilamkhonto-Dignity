@@ -25,7 +25,7 @@ export default function About() {
         {/* Content Section */}
         <section className="py-20 bg-background">
           <div className="container px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
               <div className="space-y-6">
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
                   Our Story

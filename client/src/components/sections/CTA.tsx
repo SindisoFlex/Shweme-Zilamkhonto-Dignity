@@ -4,7 +4,7 @@ import { Link } from "wouter";
 
 export function CTA() {
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 bg-secondary/10"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/80 to-background"></div>

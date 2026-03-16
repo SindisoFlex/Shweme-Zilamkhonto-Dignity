@@ -91,7 +91,7 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden py-24 md:py-0">
+        <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden py-20 md:py-0">
           <div className="absolute inset-0 z-0">
             <img 
               src={heroImg} 
@@ -138,7 +138,7 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="py-24 md:py-32 bg-card">
+        <section className="py-20 bg-card">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">Our Services</h2>
@@ -147,7 +147,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
                 <ServiceCard key={index} {...service} />
               ))}
@@ -164,9 +164,9 @@ export default function Home() {
         </section>
 
         {/* Community Story Section */}
-        <section className="py-24 md:py-32 bg-background relative overflow-hidden">
+        <section className="py-20 bg-background relative overflow-hidden">
           <div className="container px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
               <div className="relative order-2 lg:order-1">
                 <div className="absolute -inset-4 bg-primary/20 rounded-2xl rotate-3"></div>
                 <img 
@@ -203,7 +203,7 @@ export default function Home() {
         </section>
 
         {/* Cover Plans Section */}
-        <section className="py-24 md:py-32 bg-card">
+        <section className="py-20 bg-card">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">Funeral Cover Plans</h2>
@@ -212,7 +212,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto items-center">
               {coverPlans.map((plan, index) => (
                 <div key={index} className={plan.popular ? "md:-mt-8 md:mb-8" : ""}>
                   <CoverPlanCard {...plan} />
@@ -230,9 +230,9 @@ export default function Home() {
         </section>
 
         {/* Livestream Highlight */}
-        <section className="py-24 md:py-32 bg-background relative overflow-hidden">
+        <section className="py-20 bg-background relative overflow-hidden">
           <div className="container px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row items-center gap-16">
+            <div className="flex flex-col md:flex-row items-center gap-6">
               
               <div className="md:w-1/2 space-y-6 relative z-10">
                 <span className="text-primary font-medium tracking-wider uppercase text-sm">Virtual Attendance</span>
@@ -266,7 +266,7 @@ export default function Home() {
         </section>
 
         {/* Branches Section */}
-        <section className="py-24 md:py-32 bg-card">
+        <section className="py-20 bg-card">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-primary font-medium tracking-wider uppercase text-sm mb-2 block">Our Locations</span>
@@ -276,7 +276,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-background rounded-2xl p-8 border border-white/5 hover:border-primary/30 transition-colors shadow-md text-center">
                 <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                   <HeartHandshake className="h-7 w-7 text-primary" />

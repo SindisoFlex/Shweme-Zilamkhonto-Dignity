@@ -33,6 +33,10 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+.container {
+  max-width: 1200px !important;
+}
+
 :root {
   /* Using Dark Mode as Default to meet "dark charcoal" and "gold" requirement */
   --background: 0 0% 10%; /* #1A1A1A - Dark Charcoal */
