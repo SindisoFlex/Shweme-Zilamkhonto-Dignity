@@ -1,10 +1,15 @@
 import { Link } from "wouter";
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { BusinessInfo } from "@/components/sections/BusinessInfo";
 
 export function Footer() {
   return (
     <footer className="bg-card border-t border-white/10 pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-16">
+          <BusinessInfo />
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           
           {/* Brand */}

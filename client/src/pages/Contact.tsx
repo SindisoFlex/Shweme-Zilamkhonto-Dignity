@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
+import { BusinessInfo } from "@/components/sections/BusinessInfo";
 
 export default function Contact() {
   return (
@@ -132,6 +133,10 @@ export default function Contact() {
                 </form>
               </div>
 
+            </div>
+
+            <div className="mt-20">
+              <BusinessInfo />
             </div>
           </div>
         </section>

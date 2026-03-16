@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { CTA } from "@/components/sections/CTA";
+import { BusinessInfo } from "@/components/sections/BusinessInfo";
 import aboutImg from "@/assets/images/about.jpg";
 
 export default function About() {
@@ -67,14 +68,20 @@ export default function About() {
                   </ul>
                 </div>
               </div>
-              <div className="relative">
-                <div className="absolute -inset-4 bg-secondary/10 rounded-2xl -rotate-3"></div>
-                <img 
-                  src={aboutImg} 
-                  alt="Our Director" 
-                  className="relative z-10 rounded-xl shadow-2xl w-full aspect-[4/5] object-cover"
-                />
+              <div className="relative space-y-12">
+                <div className="relative">
+                  <div className="absolute -inset-4 bg-secondary/10 rounded-2xl -rotate-3"></div>
+                  <img 
+                    src={aboutImg} 
+                    alt="Our Director" 
+                    className="relative z-10 rounded-xl shadow-2xl w-full aspect-[4/5] object-cover"
+                  />
+                </div>
               </div>
+            </div>
+            
+            <div className="mt-20">
+              <BusinessInfo />
             </div>
           </div>
         </section>
