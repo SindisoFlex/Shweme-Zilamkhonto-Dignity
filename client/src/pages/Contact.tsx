@@ -25,16 +25,28 @@ export default function Contact() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               
               {/* Contact Information */}
-              <div className="space-y-8">
-                <div>
-                  <h2 className="font-serif text-3xl font-bold text-foreground mb-6">We Are Here To Support Your Family.</h2>
+              <div className="space-y-10 order-2 lg:order-1">
+                <div className="text-center lg:text-left">
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">We Are Here To Support Your Family.</h2>
                   <p className="text-muted-foreground text-lg mb-8">
                     Whether you need immediate assistance or wish to inquire about our policies, our team is ready to help.
                   </p>
                 </div>
 
+                {/* Quick Access Mobile Buttons (Hidden on desktop if preferred, but good for all) */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-6 border-b border-white/10">
+                  <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-16 text-lg gap-3 shadow-lg shadow-primary/20">
+                    <Phone className="h-6 w-6" />
+                    Call 0800 000 000
+                  </Button>
+                  <Button size="lg" className="w-full bg-[#25D366] text-white hover:bg-[#128C7E] h-16 text-lg gap-3 shadow-lg shadow-[#25D366]/20">
+                    <MessageCircle className="h-6 w-6" />
+                    WhatsApp Us
+                  </Button>
+                </div>
+
                 <div className="grid gap-6">
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-card border border-white/5">
+                  <div className="flex items-start gap-4 p-6 rounded-2xl bg-card border border-white/5 shadow-md hover:border-primary/30 transition-colors">
                     <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
@@ -45,32 +57,18 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-card border border-white/5">
-                    <div className="h-12 w-12 rounded-full bg-[#25D366]/20 flex items-center justify-center shrink-0">
-                      <MessageCircle className="h-6 w-6 text-[#25D366]" />
-                    </div>
-                    <div className="w-full">
-                      <h3 className="font-bold text-foreground text-lg">WhatsApp</h3>
-                      <p className="text-muted-foreground mb-2">Message us directly</p>
-                      <Button className="w-full sm:w-auto bg-[#25D366] text-white hover:bg-[#128C7E] gap-2 mt-1">
-                        <MessageCircle className="h-4 w-4" />
-                        Chat With Us
-                      </Button>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-card border border-white/5">
+                  <div className="flex items-start gap-4 p-6 rounded-2xl bg-card border border-white/5 shadow-md hover:border-primary/30 transition-colors">
                     <div className="h-12 w-12 rounded-full bg-secondary/20 flex items-center justify-center shrink-0">
                       <Mail className="h-6 w-6 text-secondary" />
                     </div>
                     <div>
                       <h3 className="font-bold text-foreground text-lg">Email</h3>
                       <p className="text-muted-foreground mb-2">For general inquiries</p>
-                      <a href="mailto:info@shwemefunerals.co.za" className="text-primary font-medium hover:underline">info@shwemefunerals.co.za</a>
+                      <a href="mailto:info@shwemefunerals.co.za" className="text-primary font-medium hover:underline text-lg">info@shwemefunerals.co.za</a>
                     </div>
                   </div>
                   
-                  <div className="flex items-start gap-4 p-4 rounded-xl bg-card border border-white/5">
+                  <div className="flex items-start gap-4 p-6 rounded-2xl bg-card border border-white/5 shadow-md hover:border-primary/30 transition-colors">
                     <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
@@ -79,12 +77,12 @@ export default function Contact() {
                       <p className="text-muted-foreground mb-4">123 Main Road, Zwide, Gqeberha</p>
                       
                       {/* Google Map Placeholder */}
-                      <div className="w-full h-48 bg-muted rounded-lg border border-white/10 flex items-center justify-center overflow-hidden relative">
+                      <div className="w-full h-64 bg-muted rounded-xl border border-white/10 flex items-center justify-center overflow-hidden relative shadow-inner">
                         <div className="absolute inset-0 bg-primary/5"></div>
-                        <div className="flex flex-col items-center gap-2 text-muted-foreground z-10 p-4 text-center">
-                          <MapPin className="h-8 w-8 text-primary/60" />
-                          <span className="text-sm font-medium">Interactive Map Placeholder</span>
-                          <span className="text-xs">Google Maps integration goes here</span>
+                        <div className="flex flex-col items-center gap-3 text-muted-foreground z-10 p-4 text-center">
+                          <MapPin className="h-10 w-10 text-primary/60" />
+                          <span className="text-base font-medium">Interactive Map Placeholder</span>
+                          <span className="text-sm">Google Maps integration goes here</span>
                         </div>
                       </div>
                     </div>
@@ -93,7 +91,7 @@ export default function Contact() {
               </div>
 
               {/* Contact Form */}
-              <div className="bg-card border border-white/10 rounded-2xl p-8 shadow-xl">
+              <div className="bg-card border border-white/10 rounded-2xl p-8 shadow-xl order-1 lg:order-2">
                 <h3 className="font-serif text-2xl font-bold text-foreground mb-6">Send us a message</h3>
                 <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

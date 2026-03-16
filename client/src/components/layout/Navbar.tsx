@@ -92,13 +92,13 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
-              <Button variant="outline" className="w-full justify-center border-primary text-primary hover:bg-primary hover:text-primary-foreground gap-2">
-                <Phone className="h-4 w-4" />
+            <div className="flex flex-col gap-4 pt-6 border-t border-white/10">
+              <Button size="lg" variant="outline" className="w-full justify-center border-primary text-primary hover:bg-primary hover:text-primary-foreground gap-2 py-6 text-lg">
+                <Phone className="h-5 w-5" />
                 Call Now
               </Button>
-              <Button className="w-full justify-center bg-[#25D366] text-white hover:bg-[#128C7E] gap-2">
-                <MessageCircle className="h-4 w-4" />
+              <Button size="lg" className="w-full justify-center bg-[#25D366] text-white hover:bg-[#128C7E] gap-2 py-6 text-lg">
+                <MessageCircle className="h-5 w-5" />
                 WhatsApp Us
               </Button>
             </div>

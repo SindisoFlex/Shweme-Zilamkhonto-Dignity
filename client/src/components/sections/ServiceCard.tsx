@@ -11,16 +11,16 @@ interface ServiceCardProps {
 
 export function ServiceCard({ title, description, features }: ServiceCardProps) {
   return (
-    <Card className="h-full flex flex-col bg-card border-white/5 hover:border-primary/50 transition-all duration-300 group">
-      <CardHeader>
-        <CardTitle className="font-serif text-2xl text-primary group-hover:text-primary/80 transition-colors">
+    <Card className="h-full flex flex-col bg-card border-white/5 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group rounded-2xl overflow-hidden shadow-md">
+      <CardHeader className="pb-4">
+        <CardTitle className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors">
           {title}
         </CardTitle>
-        <CardDescription className="text-muted-foreground text-base">
+        <CardDescription className="text-muted-foreground text-base mt-3">
           {description}
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex-grow">
+      <CardContent className="flex-grow pt-2">
         <ul className="space-y-3">
           {features.map((feature, i) => (
             <li key={i} className="flex items-start gap-3">

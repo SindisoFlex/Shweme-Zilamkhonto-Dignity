@@ -13,25 +13,25 @@ interface CoverPlanCardProps {
 
 export function CoverPlanCard({ title, price, description, features, popular }: CoverPlanCardProps) {
   return (
-    <Card className={`h-full flex flex-col relative overflow-hidden transition-all duration-300 ${
-      popular ? "border-primary bg-card/80 shadow-lg shadow-primary/10" : "border-white/5 bg-card"
+    <Card className={`h-full flex flex-col relative overflow-hidden transition-all duration-300 rounded-2xl shadow-md hover:shadow-lg ${
+      popular ? "border-primary bg-card/80 shadow-primary/20 hover:shadow-primary/30" : "border-white/5 bg-card hover:border-primary/20"
     }`}>
       {popular && (
-        <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-bl-lg z-10">
+        <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-bold px-4 py-1.5 rounded-bl-xl z-10 tracking-wider">
           MOST POPULAR
         </div>
       )}
       
-      <CardHeader className={`${popular ? "bg-primary/5" : ""} pb-8`}>
+      <CardHeader className={`${popular ? "bg-primary/5" : ""} pb-8 pt-8`}>
         <CardTitle className="font-serif text-2xl text-foreground">
           {title}
         </CardTitle>
-        <CardDescription className="text-muted-foreground mt-2 min-h-10">
+        <CardDescription className="text-muted-foreground mt-3 min-h-[3rem]">
           {description}
         </CardDescription>
-        <div className="mt-4">
-          <span className="text-4xl font-bold text-primary">R{price}</span>
-          <span className="text-muted-foreground"> /month</span>
+        <div className="mt-6">
+          <span className="text-4xl md:text-5xl font-bold text-primary">R{price}</span>
+          <span className="text-muted-foreground text-lg"> /month</span>
         </div>
       </CardHeader>
       

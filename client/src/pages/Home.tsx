@@ -92,38 +92,38 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden py-24 md:py-0">
           <div className="absolute inset-0 z-0">
             <img 
               src={heroImg} 
               alt="Respectful memorial service" 
-              className="w-full h-full object-cover opacity-40"
+              className="w-full h-full object-cover opacity-50"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/30"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent"></div>
           </div>
           
-          <div className="container relative z-10 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl space-y-6">
-              <span className="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary border border-primary/30 text-sm font-medium tracking-wider uppercase mb-2">
+          <div className="container relative z-10 px-4 sm:px-6 lg:px-8 mt-12 md:mt-0">
+            <div className="max-w-3xl space-y-6 md:space-y-8 text-center md:text-left">
+              <span className="inline-block py-1.5 px-4 rounded-full bg-primary/20 text-primary border border-primary/30 text-xs md:text-sm font-medium tracking-wider uppercase mb-2">
                 Shweme Zilamkhonto Funerals
               </span>
-              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white drop-shadow-lg">
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white drop-shadow-xl">
                 Serving Families With <span className="text-primary italic">Dignity</span>, <span className="text-primary italic">Compassion</span>, and Respect
               </h1>
-              <p className="text-lg sm:text-xl text-gray-200 max-w-2xl font-light">
+              <p className="text-lg sm:text-xl text-gray-200 max-w-2xl font-light md:mx-0 mx-auto">
                 Shweme Zilamkhonto Funerals provides professional funeral services designed to support families with care, respect, and trusted community values.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base h-12 px-8">
+              <div className="flex flex-col sm:flex-row gap-4 pt-6 md:justify-start justify-center">
+                <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 text-lg h-14 px-8 shadow-lg shadow-primary/20">
                   View Services
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 hover:text-white text-base h-12 px-8">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white/10 hover:text-white text-lg h-14 px-8 shadow-lg">
                   Contact Us
                 </Button>
               </div>
-              <div className="pt-8">
-                <p className="text-primary font-medium tracking-wide uppercase text-sm border-t border-white/20 pt-4 inline-block">
+              <div className="pt-10">
+                <p className="text-primary font-medium tracking-wide uppercase text-sm border-t border-white/20 pt-6 inline-block w-full md:w-auto text-center md:text-left">
                   Trusted Funeral Services in Zwide, Port Elizabeth.
                 </p>
               </div>
@@ -132,7 +132,7 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="py-24 bg-card">
+        <section className="py-24 md:py-32 bg-card">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">Our Services</h2>
@@ -158,7 +158,7 @@ export default function Home() {
         </section>
 
         {/* Community Story Section */}
-        <section className="py-24 bg-background relative overflow-hidden">
+        <section className="py-24 md:py-32 bg-background relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/5 skew-x-12 translate-x-20"></div>
           
           <div className="container px-4 sm:px-6 lg:px-8 relative z-10">
@@ -201,7 +201,7 @@ export default function Home() {
         <TrustPillars />
 
         {/* Cover Plans Section */}
-        <section className="py-24 bg-card/50">
+        <section className="py-24 md:py-32 bg-card/50">
           <div className="container px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">Funeral Cover Plans</h2>
