@@ -27,7 +27,7 @@ export default function Contact() {
               {/* Contact Information */}
               <div className="space-y-8">
                 <div>
-                  <h2 className="font-serif text-3xl font-bold text-foreground mb-6">Get In Touch</h2>
+                  <h2 className="font-serif text-3xl font-bold text-foreground mb-6">We Are Here To Support Your Family.</h2>
                   <p className="text-muted-foreground text-lg mb-8">
                     Whether you need immediate assistance or wish to inquire about our policies, our team is ready to help.
                   </p>
@@ -49,10 +49,13 @@ export default function Contact() {
                     <div className="h-12 w-12 rounded-full bg-[#25D366]/20 flex items-center justify-center shrink-0">
                       <MessageCircle className="h-6 w-6 text-[#25D366]" />
                     </div>
-                    <div>
+                    <div className="w-full">
                       <h3 className="font-bold text-foreground text-lg">WhatsApp</h3>
                       <p className="text-muted-foreground mb-2">Message us directly</p>
-                      <a href="#" className="text-primary font-medium hover:underline">Chat with us</a>
+                      <Button className="w-full sm:w-auto bg-[#25D366] text-white hover:bg-[#128C7E] gap-2 mt-1">
+                        <MessageCircle className="h-4 w-4" />
+                        Chat With Us
+                      </Button>
                     </div>
                   </div>
 
@@ -64,6 +67,26 @@ export default function Contact() {
                       <h3 className="font-bold text-foreground text-lg">Email</h3>
                       <p className="text-muted-foreground mb-2">For general inquiries</p>
                       <a href="mailto:info@shwemefunerals.co.za" className="text-primary font-medium hover:underline">info@shwemefunerals.co.za</a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-card border border-white/5">
+                    <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                      <MapPin className="h-6 w-6 text-primary" />
+                    </div>
+                    <div className="w-full">
+                      <h3 className="font-bold text-foreground text-lg">Main Branch</h3>
+                      <p className="text-muted-foreground mb-4">123 Main Road, Zwide, Gqeberha</p>
+                      
+                      {/* Google Map Placeholder */}
+                      <div className="w-full h-48 bg-muted rounded-lg border border-white/10 flex items-center justify-center overflow-hidden relative">
+                        <div className="absolute inset-0 bg-primary/5"></div>
+                        <div className="flex flex-col items-center gap-2 text-muted-foreground z-10 p-4 text-center">
+                          <MapPin className="h-8 w-8 text-primary/60" />
+                          <span className="text-sm font-medium">Interactive Map Placeholder</span>
+                          <span className="text-xs">Google Maps integration goes here</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
