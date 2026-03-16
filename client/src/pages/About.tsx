@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { CTA } from "@/components/sections/CTA";
 import { BusinessInfo } from "@/components/sections/BusinessInfo";
+import { TrustPillars } from "@/components/sections/TrustPillars";
 import aboutImg from "@/assets/images/about.jpg";
 
 export default function About() {
@@ -85,6 +86,8 @@ export default function About() {
             </div>
           </div>
         </section>
+
+        <TrustPillars />
 
         <CTA />
       </main>

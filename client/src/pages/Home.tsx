@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CTA } from "@/components/sections/CTA";
 import { ServiceCard } from "@/components/sections/ServiceCard";
 import { CoverPlanCard } from "@/components/sections/CoverPlanCard";
+import { TrustPillars } from "@/components/sections/TrustPillars";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, PlayCircle, HeartHandshake } from "lucide-react";
 import heroImg from "@/assets/images/hero.jpg";
@@ -191,6 +192,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <TrustPillars />
 
         {/* Cover Plans Section */}
         <section className="py-24 bg-card/50">
