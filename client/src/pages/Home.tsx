@@ -6,7 +6,7 @@ import { CoverPlanCard } from "@/components/sections/CoverPlanCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, PlayCircle, HeartHandshake } from "lucide-react";
 import heroImg from "@/assets/images/hero.jpg";
-import communityImg from "@/assets/images/community.jpg";
+import communityImg from "@/assets/images/community.png";
 import { Link } from "wouter";
 
 export default function Home() {
