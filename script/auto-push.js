@@ -54,46 +54,39 @@ async function run() {
     log('Pushing to remote repository...');
     let pushSuccess = false;
     let retries = 3;
+    const branch = execSync('git branch --show-current').toString().trim();
+
     while (!pushSuccess && retries > 0) {
       try {
-        execSync('git push', { stdio: 'pipe' });
+        // Try pushing to origin first
+        log(`Attempting push to origin/${branch}...`);
+        execSync(`git push -u origin ${branch}`, { stdio: 'pipe' });
         pushSuccess = true;
-        log('Successfully pushed changes to remote.');
+        log('Successfully pushed changes to origin.');
       } catch (pushErr) {
         const errMsg = (pushErr.stderr || pushErr.message || '').toString();
+        log(`Failed to push to origin: ${errMsg.split('\n')[0]}`);
         
-        // Handle no upstream branch error
-        if (errMsg.includes('--set-upstream')) {
-          const match = errMsg.match(/git push\s+--set-upstream\s+[^\s]+\s+[^\s]+/);
-          if (match) {
-            try {
-              log(`Setting upstream branch: ${match[0]}`);
-              execSync(match[0], { stdio: 'pipe' });
-              pushSuccess = true;
-              log('Successfully pushed changes to remote and set upstream.');
-              continue;
-            } catch (setUpstreamErr) {
-              log(`Failed to push with upstream configured. Error: ${setUpstreamErr.message}`);
-            }
-          } else {
-              // Try a fallback if there's a remote named 'origin'
-              try {
-                  const branch = execSync('git branch --show-current').toString().trim();
-                  log(`Setting upstream to origin/${branch}`);
-                  execSync(`git push -u origin ${branch}`, { stdio: 'pipe' });
-                  pushSuccess = true;
-                  continue;
-              } catch (e) {}
+        // Fallback to gitsafe-backup if it exists
+        try {
+          const remotes = execSync('git remote').toString();
+          if (remotes.includes('gitsafe-backup')) {
+            log(`Attempting fallback push to gitsafe-backup/${branch}...`);
+            execSync(`git push gitsafe-backup ${branch}`, { stdio: 'pipe' });
+            pushSuccess = true;
+            log('Successfully pushed changes to gitsafe-backup.');
+            continue;
           }
+        } catch (fallbackErr) {
+          log(`Fallback push also failed: ${fallbackErr.message}`);
         }
 
         retries--;
-        log(`Failed to push. ${retries > 0 ? 'Retrying in 5 seconds...' : 'Giving up.'}`);
-        if (errMsg) log(`Error message: ${errMsg.split('\\n')[0]}`);
         if (retries > 0) {
+          log(`Retrying in 5 seconds... (${retries} retries left)`);
           await sleep(5000);
         } else {
-          throw new Error('Network failure or remote error during push.');
+          throw new Error('All push attempts failed. Please check your network and remote configuration.');
         }
       }
     }
