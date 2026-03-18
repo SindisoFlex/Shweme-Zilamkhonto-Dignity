@@ -44,6 +44,7 @@ async function buildAll() {
     ...Object.keys(pkg.dependencies || {}),
     ...Object.keys(pkg.devDependencies || {}),
   ];
+  // Don't mark express as external, it must be bundled or we resolve it properly
   const externals = allDeps.filter((dep) => !allowlist.includes(dep));
 
   await esbuild({

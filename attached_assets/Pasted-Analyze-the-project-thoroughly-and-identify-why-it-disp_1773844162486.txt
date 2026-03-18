@@ -1,0 +1,41 @@
+Analyze the project thoroughly and identify why it displays correctly on Replit but shows a blank white page when deployed on Vercel.
+
+Focus on finding deployment-related issues, not just code quality.
+
+Check the following in order:
+
+1. Build and runtime compatibility
+- Verify whether the project is truly compatible across modern browsers and operating systems: Windows, macOS, and Linux.
+- Confirm whether the issue is actually OS-related or if it is more likely caused by deployment, routing, environment variables, asset paths, or build configuration.
+
+2. Vercel-specific deployment problems
+- Check whether the correct framework preset is being used.
+- Check build command, output directory, install command, and Node version.
+- Check whether the app depends on server behavior that works on Replit but fails on Vercel.
+- Check for missing environment variables.
+- Check for client-side routing issues that need Vercel rewrites.
+- Check whether static assets, images, fonts, or scripts are referenced with broken paths.
+- Check whether there are case-sensitive file path issues that break on Linux-based deployment.
+- Check whether any import path works locally but fails in production.
+- Check whether any code crashes at startup in production and causes a blank page.
+
+3. Frontend rendering issues
+- Inspect browser console errors and build logs.
+- Identify any JavaScript error, hydration issue, module import failure, or failed API request that could cause a white screen.
+- Check whether the root component is mounting correctly.
+- Check whether there is a fatal error hidden behind a loading state, auth check, or conditional render.
+
+4. Replit vs Vercel differences
+- Explain clearly why the project can appear fine on Replit but fail on Vercel.
+- Identify differences in environment, filesystem behavior, routing, server handling, package install behavior, and production build behavior.
+
+5. Deliverables
+Provide:
+- the exact root cause or most likely root causes
+- a severity rating for each issue
+- the exact fix for each issue
+- code-level fixes where needed
+- config-level fixes where needed
+- a step-by-step action plan to make the Vercel deployment work
+
+Do not give vague suggestions. Be brutally specific. If something is uncertain, say what needs to be tested to confirm it.
