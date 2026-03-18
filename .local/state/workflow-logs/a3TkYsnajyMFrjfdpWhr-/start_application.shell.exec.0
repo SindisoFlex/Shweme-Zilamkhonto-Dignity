@@ -1,0 +1,84 @@
+
+> rest-express@1.0.0 dev:client
+> vite dev --port 5000
+
+[1G[0K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m330[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5000[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.31.97.226:[1m5000[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:20:12 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1773703284234,"name":"Error","message":"(unknown runtime error)","stack":"    at sendError (https://ccb3d565-53f8-4e33-b865-fc65a03c1d0b-00-1k5jr4cu8os7g.janeway.replit.dev/:10:13)\n    at https://ccb3d565-53f8-4e33-b865-fc65a03c1d0b-00-1k5jr4cu8os7g.janeway.replit.dev/:20:3"}
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1773703285280,"name":"Error","message":"(unknown runtime error)","stack":"    at sendError (https://ccb3d565-53f8-4e33-b865-fc65a03c1d0b-00-1k5jr4cu8os7g.janeway.replit.dev/:10:13)\n    at https://ccb3d565-53f8-4e33-b865-fc65a03c1d0b-00-1k5jr4cu8os7g.janeway.replit.dev/:20:3"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:21:58 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/Home.tsx, /src/index.css[22m
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1773703325242,"name":"Error","message":"(unknown runtime error)","stack":"    at sendError (https://ccb3d565-53f8-4e33-b865-fc65a03c1d0b-00-1k5jr4cu8os7g.janeway.replit.dev/:10:13)\n    at https://ccb3d565-53f8-4e33-b865-fc65a03c1d0b-00-1k5jr4cu8os7g.janeway.replit.dev/:20:3"}
