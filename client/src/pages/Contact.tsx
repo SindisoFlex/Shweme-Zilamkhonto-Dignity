@@ -33,15 +33,19 @@ export default function Contact() {
                   </p>
                 </div>
 
-                {/* Quick Access Mobile Buttons (Hidden on desktop if preferred, but good for all) */}
+                {/* Quick Access Mobile Buttons */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-6 border-b border-white/10">
-                  <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-16 text-lg gap-3 shadow-lg shadow-primary/20">
-                    <Phone className="h-6 w-6" />
-                    Call 0800 000 000
+                  <Button asChild size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-16 text-lg gap-3 shadow-lg shadow-primary/20">
+                    <a href="tel:0800000000">
+                      <Phone className="h-6 w-6" />
+                      Call 0800 000 000
+                    </a>
                   </Button>
-                  <Button size="lg" className="w-full bg-[#25D366] text-white hover:bg-[#128C7E] h-16 text-lg gap-3 shadow-lg shadow-[#25D366]/20">
-                    <MessageCircle className="h-6 w-6" />
-                    WhatsApp Us
+                  <Button asChild size="lg" className="w-full bg-[#25D366] text-white hover:bg-[#128C7E] h-16 text-lg gap-3 shadow-lg shadow-[#25D366]/20">
+                    <a href="https://wa.me/27800000000?text=Hello, I need assistance with a funeral service." target="_blank" rel="noopener noreferrer">
+                      <MessageCircle className="h-6 w-6" />
+                      WhatsApp Us
+                    </a>
                   </Button>
                 </div>
 
@@ -93,13 +97,27 @@ export default function Contact() {
               {/* Contact Form */}
               <div className="bg-card border border-white/10 rounded-2xl p-8 shadow-xl order-1 lg:order-2">
                 <h3 className="font-serif text-2xl font-bold text-foreground mb-6">Send us a message</h3>
-                <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <form 
+                  className="space-y-6" 
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const formData = new FormData(e.currentTarget);
+                    const name = `${formData.get('firstName')} ${formData.get('lastName')}`;
+                    const phone = formData.get('phone');
+                    const type = formData.get('inquiryType');
+                    const message = formData.get('message');
+                    const whatsappMessage = `*New Inquiry*%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Type:* ${type}%0A*Message:* ${message}`;
+                    window.open(`https://wa.me/27800000000?text=${whatsappMessage}`, '_blank');
+                  }}
+                >
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="firstName" className="text-sm font-medium text-foreground">First Name</label>
                       <input 
                         type="text" 
                         id="firstName" 
+                        name="firstName"
+                        required
                         className="w-full bg-background border border-white/10 rounded-lg p-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
                         placeholder="John"
                       />
@@ -109,6 +127,8 @@ export default function Contact() {
                       <input 
                         type="text" 
                         id="lastName" 
+                        name="lastName"
+                        required
                         className="w-full bg-background border border-white/10 rounded-lg p-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
                         placeholder="Doe"
                       />
@@ -120,6 +140,8 @@ export default function Contact() {
                     <input 
                       type="tel" 
                       id="phone" 
+                      name="phone"
+                      required
                       className="w-full bg-background border border-white/10 rounded-lg p-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
                       placeholder="082 123 4567"
                     />
@@ -129,6 +151,7 @@ export default function Contact() {
                     <label htmlFor="inquiryType" className="text-sm font-medium text-foreground">Type of Inquiry</label>
                     <select 
                       id="inquiryType" 
+                      name="inquiryType"
                       className="w-full bg-background border border-white/10 rounded-lg p-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                     >
                       <option value="immediate">Immediate Need (Death has occurred)</option>
@@ -142,14 +165,17 @@ export default function Contact() {
                     <label htmlFor="message" className="text-sm font-medium text-foreground">Message</label>
                     <textarea 
                       id="message" 
+                      name="message"
                       rows={4}
+                      required
                       className="w-full bg-background border border-white/10 rounded-lg p-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none" 
                       placeholder="How can we help you?"
                     ></textarea>
                   </div>
 
-                  <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-6 text-lg">
-                    Send Message
+                  <Button type="submit" className="w-full bg-[#25D366] text-white hover:bg-[#128C7E] py-6 text-lg shadow-lg shadow-[#25D366]/20">
+                    <MessageCircle className="mr-2 h-5 w-5" />
+                    Send via WhatsApp
                   </Button>
                 </form>
               </div>
