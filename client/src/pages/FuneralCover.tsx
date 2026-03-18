@@ -28,7 +28,8 @@ export default function FuneralCover() {
         "6-month waiting period",
         "No medicals required",
         "Family car included",
-        "Airtime & Grocery benefit"
+        "Airtime & Grocery benefit",
+        "R2,500 Cashback Benefit"
       ]
     },
     {
@@ -41,7 +42,8 @@ export default function FuneralCover() {
         "6-month waiting period",
         "Full funeral service provision",
         "Catering benefit included",
-        "Tombstone discount"
+        "Tombstone discount",
+        "R3,500 Cashback Benefit"
       ]
     }
   ];

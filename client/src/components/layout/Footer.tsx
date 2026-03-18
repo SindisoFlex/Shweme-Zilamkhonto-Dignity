@@ -133,9 +133,15 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground text-center md:text-left">
-            © {new Date().getFullYear()} Shweme Zilamkhonto Funerals. All rights reserved.
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+            <p className="text-sm text-muted-foreground text-center md:text-left">
+              © {new Date().getFullYear()} Shweme Zilamkhonto Funerals. All rights reserved.
+            </p>
+            <span className="hidden md:block text-muted-foreground/30">|</span>
+            <p className="text-sm text-muted-foreground">
+              Designed by <a href="https://kasilam-media-production.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors font-medium">KMP</a>
+            </p>
+          </div>
           <div className="flex space-x-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
