@@ -1,7 +1,10 @@
+import { Link } from "wouter";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { CTA } from "@/components/sections/CTA";
 import { ServiceCard } from "@/components/sections/ServiceCard";
+import { Button } from "@/components/ui/button";
+import { ShieldCheck } from "lucide-react";
 
 export default function Services() {
   const services = [
@@ -69,6 +72,27 @@ export default function Services() {
                 <ServiceCard key={index} {...service} />
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Funeral Cover Section */}
+        <section className="py-20 bg-muted/30 border-t border-white/10">
+          <div className="container px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
+            <div className="flex justify-center mb-6">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <ShieldCheck className="h-7 w-7" />
+              </div>
+            </div>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">Funeral Cover Plans</h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Secure peace of mind for you and your family with our affordable and comprehensive funeral cover options — starting from R120 per month with no medicals required.
+            </p>
+            <Link href="/funeral-cover">
+              <Button size="lg" className="gap-2">
+                <ShieldCheck className="h-5 w-5" />
+                View Cover Plans
+              </Button>
+            </Link>
           </div>
         </section>
 

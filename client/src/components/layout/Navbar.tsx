@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoPath from "@assets/logo_1774473932504.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/funeral-cover", label: "Funeral Cover" },
   { href: "/livestream", label: "Livestream" },
   { href: "/content", label: "Content" },
   { href: "/branches", label: "Branches" },
@@ -24,10 +24,7 @@ export function Navbar() {
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
-              {/* Placeholder Logo */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-serif font-bold text-xl">
-                SZ
-              </div>
+              <img src={logoPath} alt="Shweme Zilamkhonto Funerals" className="h-10 w-10 rounded-full object-cover" />
               <div className="flex flex-col">
                 <span className="font-serif text-lg font-bold leading-tight tracking-tight text-primary">
                   Shweme Zilamkhonto

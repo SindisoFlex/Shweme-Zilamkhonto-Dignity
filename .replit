@@ -9,10 +9,6 @@ channel = "stable-25_05"
 localPort = 5000
 externalPort = 80
 
-[[ports]]
-localPort = 5002
-externalPort = 3000
-
 [env]
 PORT = "5000"
 
@@ -48,5 +44,5 @@ outputType = "webview"
 
 [agent]
 stack = "MOCKUP_JS"
-mockupState = "MOCKUP"
+mockupState = "FULLSTACK"
 expertMode = true

@@ -1,0 +1,54 @@
+Final website polish update. Do not redesign the website. Do not add new sections unless required for the fixes below. Focus only on cleaning up the existing website so it looks more professional, branded, and client-ready.
+
+Apply the following fixes only:
+
+1. Remove all default platform branding from the website presentation.
+- Replace any default Replit/social preview metadata
+- Replace any default generated preview title or preview branding
+- Replace any default favicon or browser tab icon
+- Ensure the website no longer shows Replit branding when shared on WhatsApp or viewed in the browser tab
+
+2. Add proper website branding metadata.
+- Set the browser tab title to: Shweme Zilamkhonto Funerals
+- Add a professional meta description relevant to the funeral business
+- Add proper Open Graph and social sharing metadata so that when the website link is shared on WhatsApp or similar platforms, it shows:
+  - the correct website title
+  - the correct description
+  - the correct branded website identity
+- Use the project’s actual brand identity instead of any platform default
+
+3. Replace the favicon.
+- Use the funeral brand logo as the favicon
+- If needed, use a simplified version of the existing logo so it remains clean and readable in the browser tab
+- Make sure it looks professional and consistent with the brand
+
+4. Clean up the navigation bar.
+- Remove Funeral Cover as a standalone top-level navigation item
+- Move Funeral Cover under the Services page/section instead
+- Keep the navigation cleaner and more balanced
+- Remove duplicate or unnecessary contact-style actions in the navbar
+- Keep only one standard Contact navigation link
+- Keep strong CTA buttons only if they are clearly different and useful, for example Call Now and WhatsApp
+- Ensure the navbar feels clean, premium, and not overcrowded on desktop and mobile
+
+5. Refine the Services structure.
+- Keep Funeral Cover accessible within Services
+- Make sure this change is reflected consistently in navigation and internal linking
+- Do not leave broken links or orphan pages
+
+6. Keep all existing core content, styling direction, and page structure unless needed for the fixes above.
+- Do not rewrite the website
+- Do not change section order unnecessarily
+- Do not change colors unless needed for polish
+- Do not change text unless required for metadata, navigation clarity, or professionalism
+
+7. Final quality check.
+- Make sure the site feels like a real business website, not a demo
+- Check desktop and mobile navigation
+- Check favicon
+- Check tab title
+- Check link-sharing preview setup
+- Check spacing and alignment in the navbar
+- Check that the final presentation feels polished and professional
+
+This is a final touch-up pass. Focus only on branding polish, link-sharing polish, navigation cleanup, and overall professionalism.
